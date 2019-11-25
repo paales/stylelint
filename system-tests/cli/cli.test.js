@@ -23,7 +23,7 @@ describe('CLI', () => {
 		Object.assign(console, logRestore);
 	});
 
-	beforeEach(function() {
+	beforeEach(() => {
 		process.exitCode = undefined;
 		console.log = jest.fn();
 		process.stdout.write = jest.fn();
